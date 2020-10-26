@@ -1,0 +1,36 @@
+https://covid19-brazil-api.now.sh/api/report/v1
+
+https://api.covid19india.org/data.json
+
+----Treino----
+- São Paulo
+- Bahia
+- Minas Gerais
+- Rio de Janeiro
+- Ceará
+- Pará
+- Goiás
+- Santa Catarina
+- Rio Grande do Sul
+- Distrito Federal
+- Paraná
+- Maranhão
+- Pernambuco
+- Amazonas
+- Espírito Santo
+- Mato Grosso
+- Sergipe
+- Mato Grosso do Sul
+- Roraima
+- Paraíba
+- Tocantins
+
+---Teste---
+- Rio Grande do Norte
+- Rondônia
+- Amapá
+- Acre
+- Piauí
+- Alagoas
+
+me informe sobre o corona no para
