@@ -1,0 +1,2 @@
+caso queira executar o Rasa X é só pegar os arquivos dessa pasta e
+colar na raiz. E executar no terminal o comando: rasa x.
