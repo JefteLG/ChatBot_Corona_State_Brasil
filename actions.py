@@ -32,7 +32,7 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 import requests
-import unicodename
+from help.unicodename import remove_non_ascii_normalized
 
 
 class ActionsStatusCoronaState(Action):
@@ -53,6 +53,7 @@ class ActionsStatusCoronaState(Action):
         for e in entities:
             if e['entity'] == "state":
                 state = e['value']
+                print(state)
 
         message = 'Não consegui localizar este estado...\n' \
                   'Verifique o nome do estado que você escreveu.\n' \
@@ -60,7 +61,7 @@ class ActionsStatusCoronaState(Action):
                   'Ex.:"Rio de Janeiro", "Piaui", "Acre"'
 
         for date in response['data']:
-            if unicodename.remove_non_ascii_normalized(date['state']) == unicodename.remove_non_ascii_normalized(state):
+            if remove_non_ascii_normalized(date['state']) == remove_non_ascii_normalized(state):
                 print(date)
                 message = f"Estado: {date['state']}\n" \
                           f"Casos confirmados: {date['cases']}\n" \

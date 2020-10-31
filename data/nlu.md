@@ -44,7 +44,7 @@
 
 ## intent:state
 - [São Paulo](state)
-- [são paulo](state)
+- [sao paulo](state)
 - [Bahia](state)
 - [Minas Gerais](state)
 - [minas gerais](state)
