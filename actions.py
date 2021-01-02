@@ -60,13 +60,13 @@ class ActionsStatusCoronaState(Action):
                   'Eu ainda estou aprendendo tente colocar o nome do estado com a primeira letra maiuscula\n' \
                   'Ex.:"Rio de Janeiro", "Piaui", "Acre"'
 
-        for date in response['data']:
-            if remove_non_ascii_normalized(date['state']) == remove_non_ascii_normalized(state):
-                print(date)
-                message = f"Estado: {date['state']}\n" \
-                          f"Casos confirmados: {date['cases']}\n" \
-                          f"Supeitos: {date['suspects']}\nMortes: {date['deaths']}\n" \
-                          f"Ultima atualização: {date['datetime']}"
+        for data in response['data']:
+            if remove_non_ascii_normalized(data['state']) == remove_non_ascii_normalized(state):
+                print(data)
+                message = f"Estado: {data['state']}\n" \
+                          f"Casos confirmados: {data['cases']}\n" \
+                          f"Supeitos: {data['suspects']}\nMortes: {data['deaths']}\n" \
+                          f"Ultima atualização: {data['datetime']}"
 
         dispatcher.utter_message(text=message)
 
