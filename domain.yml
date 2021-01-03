@@ -1,7 +1,6 @@
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-
 intents:
 - welcome
 - goodbye
@@ -9,10 +8,6 @@ intents:
 - find_corona_state
 - state
 - welcome_for_you
-
-actions:
-- actions_status_corona_state
-
 entities:
 - state
 
@@ -21,15 +16,17 @@ responses:
   - text: 'Oie...'
   - text: 'Olá!'
   utter_goodbye:
-  - text: 'Bye'
-  - text: 'Até Logo'
-  - text: 'Tchau, venha me visitar mais :)'
+  - text: Bye
+  - text: Até Logo
+  - text: Tchau, venha me visitar mais :)
   utter_state:
-  - text: 'Só temos informações do Brasil, qual o estado você quer ter informação?'
-  - text: 'Só temos informações do Brasil, informe o estado'
+  - text: Só temos informações do Brasil, qual o estado você quer ter informação?
+  - text: Só temos informações do Brasil, informe o estado
   utter_find_state:
-  - text: 'Só um momento... estou reunindo as informações para vc ;)'
-  - text: 'Procurando por informações...'
+  - text: Só um momento... estou reunindo as informações para vc ;)
+  - text: Procurando por informações...
   utter_welcome_for_you:
-  - text: 'Eu que agradeço'
-  - text: 'Por nada'
+  - text: Eu que agradeço
+  - text: Por nada
+actions:
+- actions_status_corona_state
